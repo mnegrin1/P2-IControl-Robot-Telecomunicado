@@ -1,1 +1,18 @@
+#define LENTA 90
+#define MEDIA 127
+#define MAXIMA 255 //Definimos de 0-255 (PWM) las velocidades del motor
+int vel = {LENTA,MEDIA,MAXIMA};// vector global con los 
 
+void Avanzar(vel){
+digitalWrite(PinAvance,1);
+digitalWrite(PinRetroceso,0);
+}
+void Retroceder(vel){
+digitalWrite(PinAvance,0);
+digitalWrite(PinRetroceso,1);
+}
+void GirarDireccion(sentido, angulo){
+}
+void GirarSensor( sentido, angulo ){
+}
+ReinicioPosicional(){}
